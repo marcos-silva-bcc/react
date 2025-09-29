@@ -1,6 +1,8 @@
 import ListGroup from "./Components/ListGroup/ListGroup"; 
 import { useState } from "react";
 import { IoMapSharp } from "react-icons/io5";
+import Button from "./Components/Button/Button";
+import Like from "./Components/Like";
 
 function App() {
   const[alertVisible, setAlertVisibility] = useState(false)
@@ -8,9 +10,13 @@ function App() {
 
   return (
   <div>
-    <IoMapSharp color="green" size={25}/>
-    <ListGroup items={items} heading="Cidades" onSelectItem={() => {}}/>
-  </div>)
+    <IoMapSharp/>
+    <ListGroup heading="Cidades" items={items}/>
+    <Button onClick={() => {}}>
+      Submit
+    </Button>
+    <Like></Like>
+  </div> )
 
   /*return(
     <div>
