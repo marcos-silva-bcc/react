@@ -1,15 +1,15 @@
 import ListGroup from "./Components/ListGroup/ListGroup"; 
-import Alert from "./Components/Alert";
-import Button from "./Components/Button";
 import { useState } from "react";
-import "./App.css"
+import { IoMapSharp } from "react-icons/io5";
 
 function App() {
   const[alertVisible, setAlertVisibility] = useState(false)
   let items = ['São Paulo', 'Rio de Janeiro', 'Toquio','Londres', 'Paris'];
 
   return (
-  <div><ListGroup items={items} heading="Cities"/>
+  <div>
+    <IoMapSharp color="green" size={25}/>
+    <ListGroup items={items} heading="Cidades" onSelectItem={() => {}}/>
   </div>)
 
   /*return(
