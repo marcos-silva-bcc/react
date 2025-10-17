@@ -8,3 +8,10 @@
     background-color: green;
     color: white;
 }
+
+.button {
+    padding: 8px 12px;
+    border-radius: 3px;
+    background-color: mediumseagreen;
+    color: white;
+}
